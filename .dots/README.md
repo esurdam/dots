@@ -16,7 +16,7 @@
     dotss "Add zshrc"
     dots push
 
-##Replicate
+##Replicate:
 
     git clone --separate-git-dir=$HOME/.dots https://github.com/esurdam/dots.git dots-tmp
     rsync --recursive --verbose --exclude '.git' dots-tmp/ $HOME/

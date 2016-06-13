@@ -1,17 +1,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/esurdam/.oh-my-zsh
 
-#GPG STUFF
-# set -e SSH_AUTH_SOCK
-# set -U -x SSH_AUTH_SOCK ~/.gnupg/S.gpg-agent.ssh
-# if [ -f "${HOME}/.gpg-agent-info" ]; then
-#   . "${HOME}/.gpg-agent-info"
-#   export GPG_AGENT_INFO
-#   export SSH_AUTH_SOCK
-#   export SSH_AGENT_PID
-# fi
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
@@ -61,10 +50,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git gpg-agent ruby)
 
 # User configuration
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:pony:pony *";
-export GOPATH=$HOME/.go
+source ~/.profile
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,17 +70,3 @@ source $ZSH/oh-my-zsh.sh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gpg="gpg2"
-alias edinit="atom ~/owncloud/Devlo/dev-init"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="/usr/local/sbin:$PATH"
