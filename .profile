@@ -2,7 +2,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:pony:pony *";
 
 #bash completion for pass
-echo "source /usr/local/etc/bash_completion.d/password-store"
+autoload -U compinit && compinit
+autoload -U bashcompinit && bashcompinit
+source /usr/local/etc/bash_completion.d/password-store
 
 export GOPATH=$HOME/.go
 
