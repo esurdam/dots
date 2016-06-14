@@ -15,3 +15,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Example aliases
 source ~/.dotset/aliases
+
+#source functions
+source ~/.dotset/functions
