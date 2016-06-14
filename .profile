@@ -20,3 +20,4 @@ alias gpg="gpg2"
 alias edinit="atom ~/owncloud/Devlo/dev-init"
 alias dots='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
 alias dotss="dots commit -a -S -m "
+alias dotsup="dots submodule foreach git pull origin master"
