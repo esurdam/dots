@@ -62,3 +62,10 @@ mutt(){
 		${DOCKER_REPO_PREFIX}/mutt
 	)
 }
+
+rainbowstream(){
+	docker run -it --rm \
+		-v $HOME/.dotset/dockerfiles/rainbowstream/conf:/root \
+		--name rainbowstream \
+		${DOCKER_REPO_PREFIX}/rainbowstream
+}

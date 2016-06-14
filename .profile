@@ -19,7 +19,7 @@ source ~/.dotset/aliases
 source ~/.dotset/functions
 
 #source docker apps
-source ~/.dotset/docker_functions
+source ~/.dotset/dockerfunc
 
 #source secrets
 source ~/.dotset/secrets
