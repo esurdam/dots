@@ -2,7 +2,10 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:pony:pony *";
 
 #bash completion for pass
-#source /usr/local/etc/bash_completion.d/password-store
+TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
+  if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
+    source /usr/local/etc/bash_completion.d/password-store
+  fi
 
 export GOPATH=$HOME/.go
 
