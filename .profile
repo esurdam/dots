@@ -1,5 +1,7 @@
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:pony:pony *";
+#!/bin/bash
+
+#expot docker info at terminal login
+#eval "$(docker-machine env default)"
 
 #bash completion for pass
 TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
@@ -7,14 +9,14 @@ TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
     source /usr/local/etc/bash_completion.d/password-store
   fi
 
-export GOPATH=$HOME/.go
-
-#RVM goodies
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# Exports
+source ~/.dotset/exports
 
 # Example aliases
 source ~/.dotset/aliases
 
 #source functions
 source ~/.dotset/functions
+
+#source docker apps
+#source ~/.dotset/docker_functions
