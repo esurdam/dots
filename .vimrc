@@ -1,3 +1,4 @@
+" thanks to https://github.com/jfrazelle/.vim
 " load plugins
 execute pathogen#infect()
 call pathogen#helptags()
