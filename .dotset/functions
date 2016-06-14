@@ -151,6 +151,19 @@ v() {
 	fi
 }
 
+# `o` with no arguments opens the current directory, otherwise opens the given
+# location
+o() {
+	if [ $# -eq 0 ]; then
+		#xdg-open .	> /dev/null 2>&1
+		open .	> /dev/null 2>&1
+	else
+		#xdg-open "$@" > /dev/null 2>&1
+		open .	> /dev/null 2>&1
+	fi
+}
+
+
 # `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
 # the `.git` directory, listing directories first. The output gets piped into
 # `less` with options to preserve color and line numbers, unless the output is
@@ -199,9 +212,11 @@ isup() {
 	local uri=$1
 
 	if curl -s --head  --request GET "$uri" | grep "200 OK" > /dev/null ; then
-		notify-send --urgency=critical "$uri is down"
+		#notify-send --urgency=critical "$uri is down"
+		echo "$uri is down"
 	else
-		notify-send --urgency=low "$uri is up"
+		#notify-send --urgency=low "$uri is up"
+		echo "$uri is up"
 	fi
 }
 

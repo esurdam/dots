@@ -9,6 +9,9 @@
 [submodule "vim/tabular"]
 	path = .vim/bundle/tabular
     url = https://github.com/godlygeek/tabular.git
+[submodule "vim/vim-jsx"]
+	path = .vim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
 [submodule "vim/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
     url = https://github.com/altercation/vim-colors-solarized.git
