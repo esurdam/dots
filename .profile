@@ -14,10 +14,4 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias gpg="gpg2"
-alias edinit="atom ~/owncloud/Devlo/dev-init"
-alias dots='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
-alias dotss="dots commit -a -S -m "
-alias dotsup="dots submodule foreach git pull origin master"
+source ~/.dotset/aliases
