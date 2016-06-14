@@ -1,7 +1,7 @@
 FROM gliderlabs/alpine:3.3
-MAINTAINER Xueshan Feng <sfeng@stanford.edu>
+MAINTAINER Evan Surdam <es@cosi.io>>
 
-RUN apk --update add \ 
+RUN apk --update add \
       bash \
       curl \
       less \
