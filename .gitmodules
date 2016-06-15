@@ -6,6 +6,12 @@
 [submodule "vim/nerdtree"]
 	path = .vim/bundle/nerdtree
     url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/ack"]
+	path = .vim/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "vim/vim-javascript"]
+	path = .vim/bundle/vim-javascript
+    url = https://github.com/pangloss/vim-javascript
 [submodule "vim/tabular"]
 	path = .vim/bundle/tabular
     url = https://github.com/godlygeek/tabular.git

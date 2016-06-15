@@ -647,3 +647,8 @@ imap <C-K> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format-3.8.py<cr>
 autocmd BufWritePre *.cpp,*.hpp pyf /usr/share/vim/addons/syntax/clang-format-3.8.py
 
 " vim:ts=2:sw=2:et
+
+
+" ======== vim-jsx ===================
+
+let g:jsx_ext_required = 0
