@@ -28,8 +28,22 @@ relies_on(){
 		if [[ "$state" == "false" ]] || [[ "$state" == "" ]]; then
 			echo "$container is not running, starting it for you."
 			$container
+		else
+			echo "$container is already running"
 		fi
 	done
+}
+
+irssi() {
+	del_stopped irssi
+	# relies_on notify_osd
+
+	docker run --rm -it \
+		-v /etc/localtime:/etc/localtime:ro \
+		-v $HOME/.irssi:/home/user/.irssi \
+		--read-only \
+		--name irssi \
+		${DOCKER_REPO_PREFIX}/irssi
 }
 
 mutt(){
