@@ -55,8 +55,9 @@ alias edinit="atom ~/owncloud/Devlo/dev-init"
 
 #Dotfiles
 alias dots='git --git-dir=$HOME/.dots/ --work-tree=$HOME'
-alias dotss="!git --git-dir=$HOME/.dots/ --work-tree=$HOME -A && git commit -av "
+alias dotss='dots commit -av '
 alias dotsup="dots submodule foreach git pull origin master"
+
 
 alias vi="vim"
 
