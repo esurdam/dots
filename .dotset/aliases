@@ -13,6 +13,9 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+alias own="cd ~/ownCloud"
+alias owndev="cd ~/ownCloud/Devlo"
+
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
