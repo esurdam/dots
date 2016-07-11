@@ -50,7 +50,7 @@ Be careful as this will probably overwrite anything in your $HOME that conflicts
     rsync --recursive --verbose --exclude '.git' dots-tmp/ $HOME/
     rm --recursive dots-tmp 
     
-Open a new terminal to use the new goodies, firstly adding your own origin.
+Open a new terminal to use the new goodies, firstly installing any submodules.
 
     dots submodule foreach git pull origin master 
             
