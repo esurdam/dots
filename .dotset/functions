@@ -246,3 +246,21 @@ gogo(){
 	# enter the first path found
 	cd "${path[0]}"
 }
+
+_clearclip(){ sleep 15; pbcopy<<<"" }
+
+genoath(){
+	local t=$1
+
+	if [[ -z $t ]]; then
+		echo "You need to specify a token."
+		return 1
+	fi
+
+	#local ot=`oathtool -totp -b $t`
+	oathtool --totp -b $t | pbcopy
+
+	echo "Successfully created token; clipboard will clear in 15 seconds"
+	#_clearclip 2>/dev/null &;
+	( _clearclip & )
+}

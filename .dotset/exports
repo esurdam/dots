@@ -8,6 +8,8 @@ export HISTFILESIZE=$HISTSIZE;
 export HISTCONTROL=ignoredups;
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:pony:pony *";
 
+# specify homewbrew stuff
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export GOPATH=$HOME/.go
 
 # RVM goodies
