@@ -54,10 +54,16 @@ alias gpg="gpg2"
 alias edinit="atom ~/owncloud/Devlo/dev-init"
 alias vi="vim"
 
+# qr create token image
+# qrencode -tANSI -m1 -o-
+# otpauth://totp/issuer:account?secret=..
+alias qrtoken="qrencode -tANSI -m1 -o- "
+
 #Editing Shortcuts
 alias xssh="v ~/.ssh/config"
 alias xdots="v ~/.dotset"
 alias xalias="v ~/.dotset/aliases"
+alias xfunc="v ~/.dotset/functions"
 
 #Dotfile
 alias cdots="cd ~/.dotset; ls"s
@@ -70,6 +76,7 @@ alias own="cd ~/ownCloud"
 alias owndev="cd ~/ownCloud/Devlo"
 alias pay="cd ~/Develop/Payables; ls"
 alias ag="cd ~/Develop/AdGreetz; ls"
+alias ngin="cd ~/ownCloud/Devlo/SITES.io/_nginx"
 
 ###### BREW STUF ######
 alias brewed="cd ~/.dotset; brew bundle dump --force"
