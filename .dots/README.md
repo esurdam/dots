@@ -38,8 +38,6 @@ Take a look at my [dotset](https://github.com/esurdam/dots/tree/master/.dotset) 
 
 ## replicate me
 
-Replicating me will replace your $HOME dotfiles and give you a repo to begin maintaining yourself.
-
 We will do three things:
 
 1. clone the repo declaring a ```--seperate-git-dir=$HOME/.dots``` into tmp directory ```dots-tmp```
@@ -54,11 +52,11 @@ Be careful as this will probably overwrite anything in your $HOME that conflicts
     
 Open a new terminal to use the new goodies, firstly adding your own origin.
 
-    dots remote add <name> <url>
+    dots submodule foreach git pull origin master 
             
     # now you can...    
     dots add .bashrc
-    dotss "Add bashrc"
+    dotss
     dots push
     
     # edit your aliases
