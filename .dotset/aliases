@@ -61,6 +61,7 @@ alias qrtoken="qrencode -tANSI -m1 -o- "
 
 #Editing Shortcuts
 alias xssh="v ~/.ssh/config"
+alias xhosts="sudo vim /etc/hosts"
 alias xdots="v ~/.dotset"
 alias xalias="v ~/.dotset/aliases"
 alias xfunc="v ~/.dotset/functions"

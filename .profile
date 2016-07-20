@@ -9,6 +9,9 @@ TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
     source /usr/local/etc/bash_completion.d/password-store
   fi
 
+# bash completion for aws cli
+#source /usr/local/bin/aws_completer
+
 # Exports
 source ~/.dotset/exports
 
@@ -23,3 +26,4 @@ source ~/.dotset/dockerfunc
 
 #source secrets
 source ~/.dotset/secrets
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
