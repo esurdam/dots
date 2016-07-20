@@ -47,7 +47,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git jsontools gpg-agent ruby pass osx)
+plugins=(git jsontools gpg-agent ruby pass osx rand-quote screen virtualenvwrapper web-search wd)
 
 # User configuration
 source ~/.profile
@@ -70,3 +70,5 @@ source $ZSH/oh-my-zsh.sh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+# Hook for desk activation
+[ -n "$DESK_ENV" ] && source "$DESK_ENV" || true
