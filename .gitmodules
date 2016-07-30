@@ -80,4 +80,3 @@
 [submodule "vim/deoplete-go"]
 	path = .vim/bundle/deoplete-go
 	url = https://github.com/zchee/deoplete-go.git
-

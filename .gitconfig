@@ -171,7 +171,6 @@
 #	templatedir = ~/.git_template/template
 [commit]
 	gpgsign = true
-	
 # [http]
 	# cookiefile = /home/jessie/.gitcookies
 [filter "lfs"]

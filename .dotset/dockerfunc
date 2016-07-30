@@ -17,6 +17,8 @@ del_stopped(){
 
 	if [[ "$state" == "false" ]]; then
 		docker rm $name
+	else
+		docker stop $name 2>/dev/null
 	fi
 }
 relies_on(){
@@ -33,6 +35,13 @@ relies_on(){
 		fi
 	done
 }
+
+redis() {
+	del_stopped agredis
+
+	docker run -d --name agredis -p 6379:26379 redis
+}
+
 
 irssi() {
 	del_stopped irssi
