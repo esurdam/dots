@@ -39,7 +39,7 @@ relies_on(){
 redis() {
 	del_stopped agredis
 
-	docker run -d --name agredis -p 6379:26379 redis
+	docker run -d --name agredis -p 6379:6379 redis
 }
 
 
