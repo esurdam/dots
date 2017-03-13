@@ -27,3 +27,5 @@ source ~/.dotset/dockerfunc
 #source secrets
 source ~/.dotset/secrets
 [[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"
+
+export PATH="$HOME/.cargo/bin:$PATH"

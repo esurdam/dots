@@ -170,7 +170,7 @@
 #[init]
 #	templatedir = ~/.git_template/template
 [commit]
-	gpgsign = true
+	#gpgsign = true
 # [http]
 	# cookiefile = /home/jessie/.gitcookies
 [filter "lfs"]

@@ -53,7 +53,8 @@ alias raz="rsync -azP --no-compress"
 alias gpg="gpg2"
 alias edinit="atom ~/owncloud/Devlo/dev-init"
 alias vi="vim"
-
+alias pip="pip3"
+alias openssl="/usr/local/opt/openssl@1.1/bin/openssl"
 # qr create token image
 # qrencode -tANSI -m1 -o-
 # otpauth://totp/issuer:account?secret=..

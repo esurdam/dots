@@ -652,3 +652,6 @@ autocmd BufWritePre *.cpp,*.hpp pyf /usr/share/vim/addons/syntax/clang-format-3.
 " ======== vim-jsx ===================
 
 let g:jsx_ext_required = 0
+
+" ======== user =======
+let g:vim_pbcopy_local_cmd = "pbcopy"
